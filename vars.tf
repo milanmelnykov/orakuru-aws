@@ -51,9 +51,3 @@ variable "volume_specs" {
     size = 100
   }
 }
-
-
-
-
-
-
