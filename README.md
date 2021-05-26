@@ -1,4 +1,4 @@
-# Terraform code for provisioning orakuru infrastructure on AWS. Maintain your inftrsusctrucre in a code!
+# Terraform code for provisioning Orakuru infrastructure on AWS. Maintain it in a code!
 
 There are 3 modules atm and they are covering 3 things:
  * Network
