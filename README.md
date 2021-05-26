@@ -3,9 +3,9 @@
 There are 3 modules atm and they are covering 3 things:
  - Network
  - Security
- - EC2
+ - EC2 // main node + monitoring node
 
-There is also an user_data script to setup bsc node on ec2 instance.
+
 # Step by step guide:
  - Install latest Terraform version. 
  - Set your AWS credentials so Terraform can interact with your AWS acount.

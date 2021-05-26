@@ -26,12 +26,17 @@ module "ec2" {
   environment   = var.environment
   vpc_id        = module.network.vpc_id
   subnet_id     = module.network.public_subnet_id
-  sg_id         = module.security.ec2_sg_id
-  instance_type = var.instance_type
+  ec2_sg_id     = module.security.ec2_sg_id
+  monitoring_sg_id = module.security.monitoring_sg_id
   ubuntu_ami    = var.ubuntu_ami
-  key_name      = var.key_name
-  volume_specs  = var.volume_specs
   default_user  = var.default_user
+  key_name      = var.key_name
+  # ork node
+  instance_type = var.instance_type
+  volume_specs  = var.volume_specs
+  # monitoring node
+  instance_type_monitoring = var.instance_type_monitoring
+  volume_specs_monitoring  = var.volume_specs_monitoring
   source        = "./ec2"
 }
 
